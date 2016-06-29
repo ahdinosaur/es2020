@@ -9,7 +9,7 @@ because in hindsight we can do without most of ES6:
   being redeclared
 - `object destructuring` - `const { a, b } = { a: 1, b: 2 }`
 - `array destructuring` - `const [a, b] = [1, 2]`
-- `rest / spread` - `(a, b, ...args) => {}`
+- `rest parameters` - `(a, b, ...args) => {}`
 - `spread literals` - `f(a, b, ...args)`
 - `short-hand properties` - `return { a, b }`
 - `computed properties` - `return { [a]: b }`
