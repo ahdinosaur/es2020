@@ -69,6 +69,7 @@ $ npm install es2040
 
 ## See Also
 - [babel-preset-es2040](https://github.com/ahdinosaur/babel-preset-es2040)
+- [es2020](https://github.com/yoshuawuyts/es2020)
 
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
