@@ -1,4 +1,4 @@
-# es2020 [![stability][0]][1]
+# es2040 [![stability][0]][1]
 [![npm version][2]][3] [![downloads][8]][9] [![js-standard-style][10]][11]
 
 `browserify` transform that compiles a selection of ES6 features to valid ES5,
@@ -7,6 +7,14 @@ because in hindsight we can do without most of ES6:
 - `template strings` / `tagged templates` - enable DSLs inside of JS
 - `const` - using `const` by default makes it easy to spot where values are
   being redeclared
+- `object destructuring` - `const { a, b } = { a: 1, b: 2 }`
+- `array destructuring` - `const [a, b] = [1, 2]`
+- `rest / spread` - `(a, b, ...args) => {}`
+- `spread literals` - `f(a, b, ...args)`
+- `short-hand properties` - `return { a, b }`
+- `computed properties` - `return { [a]: b }`
+
+forked from [`es2020`](https://github.com/yoshuawuyts/es2020) for those of us with slightly worse vision.
 
 ## Usage
 __Via `package.json` (recommended):__
@@ -14,7 +22,7 @@ __Via `package.json` (recommended):__
 {
   "browserify": {
     "transform": [
-      "es2020"
+      "es2040"
     ]
   }
 }
@@ -22,14 +30,14 @@ __Via `package.json` (recommended):__
 
 __Via CLI:__
 ```js
-$ browserify client.js -t es2020
+$ browserify client.js -t es2040
 ```
 
 __Via Node API:__
 ```js
 const browserify = require('browserify')
 browserify('./client.js')
-  .transform('es2020')
+  .transform('es2040')
   .bundle()
   .pipe(process.stdout)
 ```
@@ -56,24 +64,24 @@ project is not democratically governed.
 
 ## Installation
 ```sh
-$ npm install es2020
+$ npm install es2040
 ```
 
 ## See Also
-- [babel-preset-es2020](https://github.com/yoshuawuyts/babel-preset-es2020)
+- [babel-preset-es2040](https://github.com/ahdinosaur/babel-preset-es2040)
 
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
 
 [0]: https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square
 [1]: https://nodejs.org/api/documentation.html#documentation_stability_index
-[2]: https://img.shields.io/npm/v/es2020.svg?style=flat-square
-[3]: https://npmjs.org/package/es2020
-[4]: https://img.shields.io/travis/yoshuawuyts/es2020/master.svg?style=flat-square
-[5]: https://travis-ci.org/yoshuawuyts/es2020
-[6]: https://img.shields.io/codecov/c/github/yoshuawuyts/es2020/master.svg?style=flat-square
-[7]: https://codecov.io/github/yoshuawuyts/es2020
-[8]: http://img.shields.io/npm/dm/es2020.svg?style=flat-square
-[9]: https://npmjs.org/package/es2020
+[2]: https://img.shields.io/npm/v/es2040.svg?style=flat-square
+[3]: https://npmjs.org/package/es2040
+[4]: https://img.shields.io/travis/ahdinosaur/es2040/master.svg?style=flat-square
+[5]: https://travis-ci.org/ahdinosaur/es2040
+[6]: https://img.shields.io/codecov/c/github/ahdinosaur/es2040/master.svg?style=flat-square
+[7]: https://codecov.io/github/ahdinosaur/es2040
+[8]: http://img.shields.io/npm/dm/es2040.svg?style=flat-square
+[9]: https://npmjs.org/package/es2040
 [10]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
 [11]: https://github.com/feross/standard

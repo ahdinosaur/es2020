@@ -1,12 +1,12 @@
-const preset = require('babel-preset-es2020')
+const preset = require('babel-preset-es2040')
 const through = require('through2')
 const babel = require('babel-core')
 
-module.exports = es2020
+module.exports = es2040
 
 // In hindsight we can do without most of ES6
 // (str, obj) -> transformStream
-function es2020 (filename, options) {
+function es2040 (filename, options) {
   if (/\.json$/i.test(filename)) return through()
   const bufs = []
   const transformStream = through(write, end)
