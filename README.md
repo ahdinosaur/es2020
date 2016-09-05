@@ -13,9 +13,9 @@
 - `short-hand properties` - `return { a, b }`
 - `computed properties` - `return { [a]: b }`
 
-forked from [`es2020`](https://github.com/yoshuawuyts/es2020) for those of us with slightly worse vision.
-
 Because, in hindsight, we can do without most of ES6.
+
+Forked from [`es2020`](https://github.com/yoshuawuyts/es2020) for those of us with slightly worse vision.
 
 ## Usage
 __Via `package.json` (recommended):__
