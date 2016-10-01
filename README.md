@@ -8,6 +8,7 @@
   being redeclared
 - `object destructuring` - `const { a, b } = { a: 1, b: 2 }`
 - `array destructuring` - `const [a, b] = [1, 2]`
+- `default parameters` - `({ a = 1, b = 2 } = {}) => a`
 - `rest parameters` - `(a, b, ...args) => {}`
 - `spread literals` - `f(a, b, ...args)`
 - `short-hand properties` - `return { a, b }`
