@@ -1,6 +1,6 @@
 {
   "name": "es2040",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "browserify transform that compiles a selection of ES6 to valid ES5",
   "main": "index.js",
   "scripts": {
