@@ -24,7 +24,8 @@ function es2040 (filename, options) {
         plugins: preset.plugins,
         sourceMaps: options._flags.debug ? 'inline' : false,
         filename: filename,
-        compact: false
+        compact: false,
+        babelrc: false
       })
     } catch (err) {
       this.emit('error', err)
