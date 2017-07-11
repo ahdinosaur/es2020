@@ -8,6 +8,9 @@ module.exports = es2040
 // (str, obj) -> transformStream
 function es2040 (filename, options) {
   if (/\.json$/i.test(filename)) return through()
+
+  const debug = options._flags && options._flags.debug
+
   const bufs = []
   const transformStream = through(write, end)
   return transformStream
@@ -22,7 +25,7 @@ function es2040 (filename, options) {
     try {
       var res = babel.transform(src, {
         plugins: preset.plugins,
-        sourceMaps: options._flags.debug ? 'inline' : false,
+        sourceMaps: debug ? 'inline' : false,
         filename: filename,
         compact: false,
         babelrc: false
